@@ -105,7 +105,7 @@
     only be used to analyze raw packet frames, like for wireshark. 
 */
 /**************************************************************************/
-#define CHIBI_PROMISCUOUS 0
+#define CHIBI_PROMISCUOUS 1
 
 /**************************************************************************/
 /*!
@@ -382,7 +382,7 @@
 /*!
     This is the energy detection threshold for the clear channel assessment.
     A channel is considered busy when the energy in the channel is:
-    RSSI_BASE_VAL + 2 • CCA_ED_THRES [dBm]
+    RSSI_BASE_VAL + 2 ï¿½ CCA_ED_THRES [dBm]
  
     where RSSI_BASE_VAL = -91 dBm for the AT86RF230
     
